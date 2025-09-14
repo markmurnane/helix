@@ -20,6 +20,7 @@
 "ui.virtual.indent-guide" = { fg = "dark-blue" }
 "ui.virtual.ruler" = { bg = "dark-white" }
 "ui.virtual.jump-label" = { fg = "light-yellow", modifiers = ["bold"] }
+"ui.virtual.ruler" = { fg = "dark-white" }
 "ui.window" = { bg = "dark-white" }
 
 "diagnostic.error" = { bg = "dark-red" }
