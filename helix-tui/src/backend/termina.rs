@@ -222,6 +222,9 @@ impl TerminaBackend {
         reset_cursor_command
             .push_str(&Csi::Cursor(csi::Cursor::CursorStyle(CursorStyle::Default)).to_string());
 
+        let mut reset_cursor_command =
+            Csi::Cursor(csi::Cursor::CursorStyle(CursorStyle::Default)).to_string();
+
         terminal.enter_cooked_mode()?;
 
         // In the case of a panic, reset the terminal eagerly. If we didn't do this and instead
