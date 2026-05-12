@@ -3,100 +3,43 @@
 # Author: Jakob Jordan <jakobjordan(at)posteo.de>
 # License: GNU GPL <http://www.gnu.org/licenses/gpl.html> 
 
-# "attribute"
-"type" = "zb-type-fg"
-"type.builtin" = { fg = "zb-type-fg", modifiers = ["bold"] }
-"type.parameter" = { fg = "zb-typedef-fg", modifiers = ["bold"] }
-"type.enum" = { fg = "zb-structure-fg", modifiers = ["bold"] }
-# "type.enum.variant"
-"constructor" = "zb-type-fg"
-"constant" = { fg = "zb-constant-fg", modifiers = ["bold"] }
-# "constant.builtin"
-"constant.builtin.boolean" = "zb-boolean-fg"
-"constant.character" = { fg = "zb-character-fg", modifiers = ["bold"] }
-# "constant.character.escape"
-"constant.numeric.integer" = { fg = "zb-number-fg" }
-"constant.numeric.float" = { fg = "zb-float-fg" }
-"string" = "zb-string-fg"
-# "string.regexp"
-# "string.special"
-# "string.special.path"
-# "string.special.url"
-# "string.special.symbol"
-"comment" = "zb-comment-fg"
-# "comment.line"
-"comment.line.documentation" = { fg = "zb-specialcomment-fg", modifiers = ["bold"] }
-# "comment.block"
-"comment.block.documentation" = { fg = "zb-specialcomment-fg", modifiers = ["bold"] }
-"variable" = "zb-identifier-fg"
-"variable.builtin" = { modifiers = ["bold"] }
-# "variable.parameter"
-# "variable.other"
-# "variable.other.member"
-# "variable.other.member.private"
-"label" = { fg = "zb-label-fg", underline = { style = 'line' } }
-# "punctuation"
-"punctuation.delimiter" = "zb-delimiter-fg"
-# "punctuation.bracket"
-"punctuation.special" = "zb-special-fg"
-"keyword" = { fg = "zb-keyword-fg", modifiers = ["bold"] }
-# "keyword.control"
-"keyword.control.conditional" = { fg = "zb-conditional-fg", modifiers = ["bold"] }
-"keyword.control.repeat" = { fg = "zb-repeat-fg", modifiers = ["bold"] }
-"keyword.control.import" = { fg = "zb-preproc-fg", modifiers = ["bold"] }
-# "keyword.control.return"
-"keyword.control.exception" = { fg = "zb-exception-fg", modifiers = ["bold"] }
-# "keyword.operator"
-# "keyword.directive"
-# "keyword.function"
-# "keyword.storage"
-"keyword.storage.type" = { fg = "zb-storageclass-fg", modifiers = ["bold"] }
-# "keyword.storage.modifier"
-"operator" = "zb-operator-fg"
-"function" = "zb-function-fg"
-"function.builtin" = { fg = "zb-function-fg", modifiers = ["bold"] }
-# "function.method"
-# "function.method.private"
-"function.macro" = { fg = "zb-macro-fg", modifiers = ["bold"] }
-# "function.special"
-"tag" = { fg = "zb-tag-fg", modifiers = ["bold"] }
-# "tag.builtin"
-"namespace" = { fg = "zb-include-fg", modifiers = ["bold"] }
-"special" = "zb-special-fg"
-# "markup"
-"markup.heading" = { fg = "zb-constant-fg", modifiers = ["bold"] }
-# "markup.heading.marker"
-# "markup.heading.1"
-# "markup.heading.2"
-# "markup.heading.3"
-# "markup.heading.4"
-# "markup.heading.5"
-# "markup.heading.6"
-"markup.list" = "zb-number-fg"
-# "markup.list.unnumbered"
-# "markup.list.numbered"
-# "markup.list.checked"
-# "markup.list.unchecked"
-"markup.bold" = { modifiers = ["bold"] }
-"markup.italic" = { modifiers = ["italic"] }
-"markup.strikethrough" = { modifiers = ["crossed_out"] }
-"markup.link" = { underline.style = "line" }
-# "markup.link.url"
-# "markup.link.label"
-# "markup.link.text" = "zb-cyan"
-"markup.quote" = "zb-comment-fg"
-"markup.raw" = "zb-delimiter-fg"
-# "markup.raw.inline"
-# "markup.raw.block"
-# "diff"
-"diff.plus" = { fg = "zb-diffadd-fg", bg = "zb-diffadd-bg", modifiers = ["bold"] }
-"diff.plus.gutter" = "zb-diffadd-fg"
-"diff.minus" = { fg = "zb-diffdelete-fg", bg = "zb-diffdelete-bg" }
-"diff.minus.gutter" = "zb-string-fg"
-"diff.delta" = { bg = "zb-diffchange-bg" }
-# "diff.delta.moved"
-# "diff.delta.conflict"
-"diff.delta.gutter" = "zb-normal-fg"
+=======
+"ui.background" = { bg = "bg" }
+"ui.menu" = { fg = "#9f9f9f", bg = "uibg" }
+"ui.menu.selected" = { fg = "#d0d0a0", bg = "#242424", modifiers = ["bold"] }
+"ui.linenr" = { fg = "#9fafaf", bg = "#262626"}
+"ui.linenr.selected" = { modifiers = ["bold"]}
+"ui.popup" = { bg = "uibg" }
+"ui.selection" = { bg = "#304a3d" }
+"ui.selection.primary" = { bg = "#2f2f2f" }
+"comment" = { fg = "comment" }
+"comment.block.documentation" = { fg = "comment", modifiers = ["bold"] }
+"comment.line.documentation" = { fg = "comment", modifiers = ["bold"] }
+"ui.virtual.inlay-hint" = { fg = "#9f9f9f" }
+"ui.statusline" = { bg = "statusbg", fg = "#ccdc90" }
+"ui.statusline.inactive" = { fg = '#2e3330', bg = '#88b090' }
+"ui.cursor" = { fg = "#000d18", bg = "#8faf9f", modifiers = ["bold"] }
+"ui.text" = { fg = "normal"}
+"operator" = { fg = "#f0efd0" , modifiers = []}
+"variable" = "normal"
+"variable.builtin" = {fg = "constant", modifiers = ["bold"]}
+"constant.numeric" = "numeric"
+"constant" = { fg = "constant", modifiers = ["bold"] }
+"type" = { fg = "#dfdfbf", modifiers = ["bold"] }
+"ui.cursor.match" = { fg = "#343434", bg = "#284f28", modifiers = ["bold"] }
+"string"  = "#cc9393"
+"variable.other.member" = "#efef8f"
+"constant.character.escape" = { fg = "#dca3a3", modifiers = ["bold"]}
+"function" = "#efef8f"
+"function.macro" = { fg = "#ffcfaf", modifiers = ["bold"] }
+"special" = "#cfbfaf"
+"keyword" = { fg = "#f0dfaf", modifiers = ["bold"]}
+"keyword.storage-class" = { fg = "#c3bf9f", modifiers = ["bold"]}
+"label" = { fg = "#dfcfaf", modifiers = ["underlined"] }
+"ui.help" = { fg = "white", bg = "black" }
+"ui.virtual.ruler" = { fg = "#484848" }
+"ui.virtual.whitespace" = { fg = "#5b605e", modifiers = ["bold"]}
+>>>>>>> pr-14453
 
 "ui.background" = { bg = "zb-normal-bg" }
 # "ui.background.separator"

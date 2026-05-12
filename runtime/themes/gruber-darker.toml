@@ -2,15 +2,15 @@
 # Based on : https://github.com/rexim/gruber-darker-theme
 
 "attribute" = "fg0"
-"keyword" = { fg = "yellow0", modifiers = ["bold"] }
+"keyword" = { fg = "yellow0" }
 "keyword.directive" = "quartz"
 "namespace" = "quartz"
 "punctuation" = "fg0"
 "punctuation.delimiter" = "fg0"
 "operator" = "fg0"
-"special" = { fg = "yellow0", modifiers = ["bold"] }
+"special" = { fg = "yellow0" }
 "variable" = "fg0"
-"variable.builtin" = {  fg = "yellow0", modifiers = ["bold"] }
+"variable.builtin" = {  fg = "yellow0" }
 "variable.parameter" = "fg0"
 "type" = "quartz"
 "type.builtin" = "yellow0"
@@ -21,7 +21,7 @@
 "comment" = { fg = "brown0" }
 "constant.character" = { fg = "green0" }
 "constant.character.escape" = { fg = "yellow0" }
-"constant.builtin" = { fg = "yellow0", modifiers = ["bold"] }
+"constant.builtin" = { fg = "yellow0" }
 "string" = "green0"
 "constant.numeric" = "wisteria"
 "label" = "fg0"
@@ -32,9 +32,9 @@
 "diff.minus" = "red0"
 
 "warning" = { fg = "orange1", modifiers = ["bold"] }
-"error" = { fg = "red0", modifiers = ["bold"] }
-"info" = { fg = "aqua1", modifiers = ["bold"] }
-"hint" = { fg = "blue0", modifiers = ["bold"] }
+"error" = { fg = "red0" }
+"info" = { fg = "aqua1" }
+"hint" = { fg = "blue0" }
 
 "ui.background" = { bg = "bg0" }
 "ui.linenr" = { fg = "bg4" }
@@ -54,21 +54,21 @@
 "ui.window" = { fg = "bg1" }
 "ui.help" = { bg = "bg1", fg = "fg0" }
 "ui.text" = { fg = "fg0" }
-"ui.text.directory" = { fg = "niagara0", modifiers = ["bold"] }
-"ui.text.focus" = { bg = "bg5", modifiers = ["bold"] }
+"ui.text.directory" = { fg = "niagara0" }
+"ui.text.focus" = { bg = "bg5" }
 "ui.selection" = { bg = "bg2" }
 "ui.selection.primary" = { bg = "bg5" }
 "ui.cursor.primary" = { bg = "fg0", fg = "niagara1" }
 "ui.cursor.match" = { bg = "yellow1" }
 "ui.menu" = { fg = "fg0", bg = "bg6" }
-"ui.menu.selected" = { fg = "fg0", bg = "bg5", modifiers = ["bold"] }
+"ui.menu.selected" = { fg = "fg0", bg = "bg5" }
 
 "ui.virtual.whitespace" = "bg8"
 "ui.virtual.indent-guide" = "bg8"
-"ui.virtual.ruler" = { bg = "bg1" }
+"ui.virtual.ruler" = { fg = "bg1" }
 "ui.virtual.inlay-hint" = { fg = "bg7" }
 "ui.virtual.wrap" = { fg = "bg2" }
-"ui.virtual.jump-label" = { fg = "red3", modifiers = ["bold"] }
+"ui.virtual.jump-label" = { fg = "red3" }
 
 "diagnostic.warning" = { underline = { color = "orange1", style = "dashed" } }
 "diagnostic.error" = { underline = { color = "red3", style = "dashed" } }
@@ -83,7 +83,7 @@
 "markup.strikethrough" = { modifiers = ["crossed_out"] }
 "markup.link.url" = { fg = "green1", modifiers = ["underlined"] }
 "markup.link.text" = "red3"
-"markup.raw" = { fg = "fg0", bg = "bg8", modifiers = ["bold"] }
+"markup.raw" = { fg = "fg0", bg = "bg8" }
 
 [palette]
 fg0 =      "#e4e4ef"

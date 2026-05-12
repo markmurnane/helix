@@ -10,8 +10,9 @@
 "ui.statusline" = { fg = "blue" }
 "ui.selection" = { bg = "bg_highlight" } 
 "ui.selection.primary" = { bg = "bg_highlight" }  
-"ui.virtual.ruler" = { bg = "bg_highlight" }
-"ui.virtual.jump-label" = { fg = "cyan", modifiers = ["bold"] }
+=======
+"ui.virtual.ruler" = { fg = "bg_highlight" }
+>>>>>>> pr-14453
 
 # Markdown Highlighting
 "markup.raw" = { fg = "blue", bg = "bg" } 
