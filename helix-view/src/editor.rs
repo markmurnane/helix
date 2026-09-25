@@ -441,6 +441,8 @@ pub struct Config {
     /// the steel engine will not be initialized.
     pub enable_steel: bool,
     /// Workspace-trust configuration.
+    pub session: SessionConfig,
+    pub insecure: bool,
     pub workspace_trust: WorkspaceTrustConfig,
 }
 
@@ -1342,6 +1344,8 @@ impl Default for Config {
             enable_steel: false,
             workspace_trust: WorkspaceTrustConfig::default(),
             session: SessionConfig::default(),
+            insecure: false,
+            workspace_trust: WorkspaceTrustConfig::default(),
         }
     }
 }
@@ -2301,7 +2305,7 @@ impl Editor {
             None => return,
         };
         let path = match doc.path() {
-            Some(path) => path.clone(),
+            Some(path) => path,
             None => return, // scratch buffer
         };
 
