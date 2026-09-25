@@ -444,6 +444,25 @@ pub struct Config {
     pub workspace_trust: WorkspaceTrustConfig,
 }
 
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
+#[serde(rename_all = "kebab-case", default, deny_unknown_fields)]
+pub struct SessionConfig {
+    /// Restore cursor position when reopening files. Defaults to false.
+    pub restore_cursor: bool,
+    /// Maximum age in days for session entries before garbage collection removes them.
+    /// Set to 0 to disable GC. Defaults to 90.
+    pub gc_max_age: u64,
+}
+
+impl Default for SessionConfig {
+    fn default() -> Self {
+        Self {
+            restore_cursor: false,
+            gc_max_age: 90,
+        }
+    }
+}
+
 /// User-facing configuration for `[editor.workspace-trust]`.
 #[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Deserialize, Serialize)]
 #[serde(default, rename_all = "kebab-case", deny_unknown_fields)]
