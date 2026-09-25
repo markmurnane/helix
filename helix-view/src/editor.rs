@@ -540,26 +540,6 @@ impl Config {
                 .right
                 .contains(&StatusLineElement::CodeActionHint)
     }
-    pub session: SessionConfig,
-}
-
-#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
-#[serde(rename_all = "kebab-case", default, deny_unknown_fields)]
-pub struct SessionConfig {
-    /// Restore cursor position when reopening files. Defaults to false.
-    pub restore_cursor: bool,
-    /// Maximum age in days for session entries before garbage collection removes them.
-    /// Set to 0 to disable GC. Defaults to 90.
-    pub gc_max_age: u64,
-}
-
-impl Default for SessionConfig {
-    fn default() -> Self {
-        Self {
-            restore_cursor: false,
-            gc_max_age: 90,
-        }
-    }
 }
 
 #[derive(Debug, Default, PartialEq, Eq, PartialOrd, Ord, Deserialize, Serialize, Clone, Copy)]
@@ -1342,7 +1322,6 @@ impl Default for Config {
             enable_steel: true,
             #[cfg(not(feature = "steel"))]
             enable_steel: false,
-            workspace_trust: WorkspaceTrustConfig::default(),
             session: SessionConfig::default(),
             insecure: false,
             workspace_trust: WorkspaceTrustConfig::default(),
@@ -1448,9 +1427,8 @@ pub struct Editor {
 
     pub mouse_down_range: Option<Range>,
     pub cursor_cache: CursorCache,
-
     pub editor_clipping: ClippingConfiguration,
-
+    pub session_state: crate::session::SessionState,
     pub workspace_trust: WorkspaceTrust,
 }
 
